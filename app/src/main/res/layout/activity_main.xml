@@ -9,50 +9,50 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/ic_logo_naver"
-        android:layout_alignTop="@id/email_text"
-        android:layout_toStartOf="@id/email_text"/>
+        android:layout_alignTop="@id/edit_email"
+        android:layout_toStartOf="@id/edit_email"/>
     <EditText
-        android:id="@+id/email_text"
+        android:id="@+id/edit_email"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:hint="E-mail@maver.com"
-        android:layout_above="@id/password_text"
-        android:layout_alignStart="@id/password_text"
+        android:layout_above="@id/edit_password"
+        android:layout_alignStart="@id/edit_password"
         android:inputType="textEmailAddress"/>
 
     <EditText
-        android:id="@+id/password_text"
+        android:id="@+id/edit_password"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
         android:hint="Password"
         android:inputType="textPassword" />
     <Button
-        android:id="@+id/log_in"
+        android:id="@+id/butt_login"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:text="LogIn"
         android:textColor="@color/white"
         android:background="@color/black"
-        android:layout_toEndOf="@id/email_text"
-        android:layout_alignTop="@id/email_text"/>
+        android:layout_toEndOf="@id/edit_email"
+        android:layout_alignTop="@id/edit_email"/>
     <Button
-        android:id="@+id/register"
+        android:id="@+id/butt_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
         android:textColor="@color/white"
         android:background="@color/black"
-        android:layout_below="@id/password_text"
-        android:layout_alignStart="@id/password_text"/>
+        android:layout_below="@id/edit_password"
+        android:layout_alignStart="@id/edit_password"/>
     <Button
-        android:id="@+id/forgot_pw"
+        android:id="@+id/butt_forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I forgot PW"
         android:textColor="@color/white"
         android:background="@color/black"
-        android:layout_below="@id/password_text"
-        android:layout_toEndOf="@id/register"
+        android:layout_below="@id/edit_password"
+        android:layout_toEndOf="@id/butt_register"
         android:layout_centerHorizontal="true"/>
 </RelativeLayout>
