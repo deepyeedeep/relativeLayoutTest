@@ -7,39 +7,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <ImageView
-        android:id="@+id/image_google"
+        android:id="@+id/image_naver"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_logo_google"/>
+        android:src="@drawable/ic_logo_naver"
+        android:layout_alignTop="@id/email_text"
+        android:layout_toStartOf="@id/email_text"/>
     <EditText
         android:id="@+id/email_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email@grnail.com"/>
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="E-mail@maver.com"
+        android:layout_above="@id/password_text"
+        android:layout_alignStart="@id/password_text"
+        android:inputType="textEmailAddress"/>
+
     <EditText
         android:id="@+id/password_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"/>
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:hint="Password"
+        android:inputType="textPassword" />
     <Button
         android:id="@+id/log_in"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
         android:text="LogIn"
-        android:textColor="@color/black"
-        android:background="@color/purple_gray_5"/>
+        android:textColor="@color/white"
+        android:background="@color/light_black"
+        android:layout_toEndOf="@id/email_text"
+        android:layout_alignTop="@id/email_text"/>
     <Button
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:textColor="@color/black"
-        android:background="@color/purple_gray_5"/>
+        android:textColor="@color/white"
+        android:background="@color/light_black"
+        android:layout_below="@id/password_text"
+        android:layout_alignStart="@id/password_text"/>
     <Button
         android:id="@+id/forgot_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I forgot PW"
-        android:textColor="@color/black"
-        android:background="@color/purple_gray_5"/>
+        android:textColor="@color/white"
+        android:background="@color/light_black"
+        android:layout_below="@id/password_text"
+        android:layout_toEndOf="@id/register"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
